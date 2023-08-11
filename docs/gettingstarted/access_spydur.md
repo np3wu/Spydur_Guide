@@ -58,8 +58,11 @@ Simply open WinSCP and enter the following information in the appropriate fields
 - Host name: spydur.richmond.edu
 - User name: URID
 - Password: Your password (Optional)
+- Keep port number as 22
 
-![winscp_startup_window](images/program/winscp/winscp_startup_window.PNG)
+<img 
+  src="https://github.com/np3wu/Spydur_Guide/blob/main/images/program/winscp/winscp_startup_window.PNG" 
+  alt="winscp">
 
 
 Additionally, you can also save a workspace by clicking the "Save" button in the bottom left corner. This will allow you to quickly access the cluster in the future.
