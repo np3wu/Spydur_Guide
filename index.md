@@ -25,6 +25,8 @@ This project is built with [Just the Docs], a documentation theme for [Jekyll]. 
 ## License
 
 Spydur Guide is licensed under the Creative Commons Zero 1.0 Universal license. See [License]
+
+## Acknowledgements
 ----
 
 [^1]: Good luck future ducklings!
