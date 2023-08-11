@@ -59,7 +59,7 @@ Simply open WinSCP and enter the following information in the appropriate fields
 - User name: URID
 - Password: Your password (Optional)
 
-![winscp_startup_window](./images/program/winscp/winscp_startup_window.PNG)
+![winscp_startup_window](images/program/winscp/winscp_startup_window.PNG)
 
 
 Additionally, you can also save a workspace by clicking the "Save" button in the bottom left corner. This will allow you to quickly access the cluster in the future.
