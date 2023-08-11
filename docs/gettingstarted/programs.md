@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Programs to Install
-Parent: Getting Started
+parent: Getting Started
 ---
 
 # Programs to Install
