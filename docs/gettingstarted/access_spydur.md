@@ -62,7 +62,7 @@ Simply open WinSCP and enter the following information in the appropriate fields
 - Keep port number as 22
 
 <img 
-  src="https://github.com/np3wu/Spydur_Guide/blob/main/images/program/winscp/winscp_startup_window.PNG" 
+  src="https://github.com/np3wu/Spydur_Guide/blob/main/images/program/winscp/winscp_startup_window.PNG?raw=true" 
   alt="winscp">
 
 
