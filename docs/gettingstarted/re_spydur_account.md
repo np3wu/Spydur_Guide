@@ -2,6 +2,7 @@
 layout: default
 title: Spydur Account
 parent: Getting Started
+nav_order: 2
 ---
 ## Requesting a Spydur Account
 {: .fs-9 }

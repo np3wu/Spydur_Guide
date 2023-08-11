@@ -2,6 +2,7 @@
 layout: default
 title: Programs to Install
 parent: Getting Started
+nav_order: 1
 ---
 
 # Programs to Install
