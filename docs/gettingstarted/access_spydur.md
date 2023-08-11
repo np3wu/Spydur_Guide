@@ -56,7 +56,7 @@ WinSCP is a SFTP client for Windows with a Graphical User Interface. It is a gre
 
 Simply open WinSCP and enter the following information in the appropriate fields:
 
-- Host name: spydur.richmond.edu
+- Host name: spydur
 - User name: URID
 - Password: Your password (Optional)
 - Keep port number as 22
