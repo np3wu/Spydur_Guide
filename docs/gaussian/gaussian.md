@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Getting Started
+title: Gaussian
 nav_order: 3
 has_children: true
-description: Gaussian Job
+description: Gaussian Job Input
 permalink: /docs/gaussian
 ---
