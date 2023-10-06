@@ -9,12 +9,17 @@ nav_order: 2
 # Activating the Scripts
 {: .fs-9 }
 
+## Using the scripts
+
 Now that your have the scripts, you can freely access them using the terminal. Try typing in the terminal (for winscp there is a open session in Putty button on the top bar):
+
 ```bash
 cd scripts
 sg16.py -h
 ```
-the `-h` command is short for help and will show you all the possible commands you can use with the script. And for this you will see the out put:
+
+the `-h` command is short for help and will show you all the possible commands you can use with the script. And for this you will see the output:
+
 ```bash
 Current directory:  /home/np3wu
 usage: sg16.py [-h] jobname
@@ -74,8 +79,23 @@ You will need to add the following lines to the bottom of the file:
 export PATH="$HOME/scripts:$PATH"
 ```
 
-Now try the command again, outside of where the script is located. If it works, then you have successfully added the script to your path!
+and reload your `.bashrc` file with the command
 
+```bash
+source ~/.bashrc
+```
+
+Now try the command again, outside of where the script is located. If it works, then you have successfully added the scripts to your path!
+
+> Important Notes:
+ The `$HOME` used in the code above is just a shortcut that will work for everyone. If you want to set any other filepath as PATH. You can perform the same operation replacing
+```bash
+"$HOME/scripts:$PATH"
+```
+> with any file path that you desire. For example:
+```bash
+"your/desired/filepath:$PATH"
+```
 ## Setting aliases
 
 You can also set aliases for the scripts. This is useful if you want to shorten the command to run the script. For example, you can set an alias for `sg16.py` to `sg16`. To do this, you will need to edit your `.bashrc` file again. Type the following command into your terminal:
@@ -89,3 +109,9 @@ and add the following line to the bottom of the file:
 ```bash
 alias sg16="python $HOME/scripts/sg16.py"
 ```
+
+You can set aliases this way for anyother types of scripts.
+
+Enjoy!
+
+[<< Previous](https://np3wu.github.io/Spydur_Guide/docs/gettingstarted/scripts/move_scripts_winscp.html) | [Next >>](https://np3wu.github.io/Spydur_Guide/docs/gettingstarted/scripts/more_scripts.html)
