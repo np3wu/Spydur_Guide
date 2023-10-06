@@ -23,6 +23,9 @@ Moving files with WinSCP is incredibly intuitive. Once you have opened the progr
   src="https://github.com/np3wu/Spydur_Guide/blob/main/images/program/winscp/winscp_main.png?raw=true" 
   alt="WinSCP main window">
 
+For now just drag the folder `scripts` you downloaded into the right panel. You should see a window pop up that says "Copy files to remote host". Click OK.
+
+[<< Previous](https://np3wu.github.io/Spydur_Guide/docs/gettingstarted/scripts/scripts.html) | [Next >>](https://np3wu.github.io/Spydur_Guide/docs/gettingstarted/scripts/activate_scripts.html)
 
 ---
 [Accessing the Spydur Cluster]: https://np3wu.github.io/Spydur_Guide/docs/gettingstarted/access_spydur.html
