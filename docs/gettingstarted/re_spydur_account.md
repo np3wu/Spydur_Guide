@@ -10,7 +10,7 @@ nav_order: 2
 To request a Spydur account, please contact hpc@richmond.edu with the following information:
 
 - Your name: First and Last
-- Your department and who you areworking with
+- Your department and who you are working with
 - Your UR email address
 - Your UR ID number
 
