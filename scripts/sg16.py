@@ -7,8 +7,8 @@ import subprocess
 def create_slurm_file(jobname):
     slurm_template = """#!/bin/bash
 
-#SBATCH --account=np3wu
-#SBATCH --mail-user=nam.pham@richmond.edu   ## your email address
+#SBATCH --account=####  ## your username
+#SBATCH --mail-user=####   ## your email address
 #SBATCH --mail-type=BEGIN  ## slurm will email you when your job starts
 #SBATCH --mail-type=END  ## slurm will email you when your job ends
 
@@ -52,8 +52,11 @@ def main():
     print("Current directory: ", directory)
 
     # Parse the jobname argument
-    parser = argparse.ArgumentParser()
-    parser.add_argument("jobname", help="Name of the job")
+    parser = argparse.ArgumentParser(
+        prog="sg16",
+        description="Create and send a Gaussian job to the SLURM manager on SPYDUR."
+    )
+    parser.add_argument('jobname', help="Name of the job. Usually ends with .com")
     args = parser.parse_args()
     jobname = args.jobname
 

@@ -330,7 +330,7 @@ def gausswriter_main():
     # Json file housed all the pseudopotential scraped from the website
     # https://www.tc.uni-koeln.de/PP/clickpse.en.html
     # I have not figured out how to tie the data to the script so this is a temporary solution.
-    json_file = "/home/np3wu/gausswriter/tree_data_gaussian.json"
+    json_file = "../gausswriter/tree_data_gaussian.json"
     ECP_data = import_data_json(json_file)
 
     if len(pseudo_elements) > 0:
