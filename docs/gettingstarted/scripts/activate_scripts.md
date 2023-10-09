@@ -37,7 +37,7 @@ However, if you try to run the same command outside of the folder:
 
 ```bash
 cd
-sg16.py -h
+python sg16.py -h
 ```
 
 Nothing happens! This is because the script is not in your path. To do this, you will need to edit your `.bashrc` file. This file is located in your home directory. To edit it, type the following command into your terminal:
@@ -45,6 +45,7 @@ Nothing happens! This is because the script is not in your path. To do this, you
 ```bash
 nano ~/.bashrc
 ```
+> NOTE: If you need a refresher on how the `nano` command works checkout this [website](https://linuxize.com/post/how-to-use-nano-text-editor/)
 
 And you will get something that looks like this:
 
@@ -84,6 +85,7 @@ and reload your `.bashrc` file with the command
 ```bash
 source ~/.bashrc
 ```
+> NOTE: Everytime you make changes to the `.bashrc ` file, you need to use this line to apply the changes.
 
 Now try the command again, outside of where the script is located. If it works, then you have successfully added the scripts to your path!
 
@@ -96,6 +98,7 @@ Now try the command again, outside of where the script is located. If it works, 
 ```bash
 "your/desired/filepath:$PATH"
 ```
+
 ## Setting aliases
 
 You can also set aliases for the scripts. This is useful if you want to shorten the command to run the script. For example, you can set an alias for `sg16.py` to `sg16`. To do this, you will need to edit your `.bashrc` file again. Type the following command into your terminal:
@@ -110,8 +113,14 @@ and add the following line to the bottom of the file:
 alias sg16="python $HOME/scripts/sg16.py"
 ```
 
+and then reload your `.bashrc` file with the command
+
+```bash
+source ~/.bashrc
+```
+
 You can set aliases this way for anyother types of scripts.
 
-Enjoy!
+There is one more detail I would like you to know and you can check that out in the next page.
 
 [<< Previous](https://np3wu.github.io/Spydur_Guide/docs/gettingstarted/scripts/move_scripts_winscp.html) | [Next >>](https://np3wu.github.io/Spydur_Guide/docs/gettingstarted/scripts/more_scripts.html)
