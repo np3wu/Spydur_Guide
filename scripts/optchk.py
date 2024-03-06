@@ -1,7 +1,10 @@
+#!/usr/bin/env python3
+
 import argparse
 import glob
 import os
 import cclib
+from tabulate import tabulate
 
 def has_imaginary_frequency(file_path):
     """
@@ -11,22 +14,27 @@ def has_imaginary_frequency(file_path):
         file_path (str): Path to the Gaussian output file.
 
     Returns:
-        str: State whether the logfile contains imaginary frequency or not.
+        bool: State whether the logfile contains imaginary frequency or not.
     """
+    hasZeroNegFreq = False
+    
     try:
         data = cclib.io.ccread(file_path)
         frequencies = data.vibfreqs
         
         if any(freq < 0 for freq in frequencies):
-            return print(f"The file '{log_file}' contains an imaginary frequency.")
+            # The file contains an imaginary frequency."
+            hasZeroNegFreq = False
         else:
-            return print(f"The file '{log_file}' does not contain an imaginary frequency.")
+            # The file does not contain an imaginary frequency.
+            hasZeroNegFreq = False
 
     except Exception as e:
-        print(f"""
-              Error parsing file '{file_path}': {str(e)}
+        print(f"""Error parsing file '{file_path}': {str(e)}
               Your frequency job might not be finished
               """)
+        
+    return hasZeroNegFreq
 
 
 def has_optimized_geometry(file_path):
@@ -37,23 +45,30 @@ def has_optimized_geometry(file_path):
         file_path (str): Path to the Gaussian output file.
 
     Returns:
-        str: Statement whether the optimized geometry is found, unoptimized geometry is found, or failed to finish.
+        bool: Has optimized geometry or not
     """
+    isOptimized = False
+    
     try:
         data = cclib.io.ccread(file_path)
         if hasattr(data, 'optstatus'):
             optstatus = data.optstatus
             if optstatus[-1] in [1, 5]:
-                return print(f"Optimized geometry calculation found in file '{log_file}'.")
+                # Optimized Geometry is found
+                isOptimized = True
             elif optstatus[-1] == 2:
-                return print(f"Unoptimized geometry calculation found in file '{log_file}'.")
+                # Unoptimized geometry is found
+                isOptimized = False
             else:
-                return print(f"Unable to tell if optimization completed or not '{log_file}'.")
+                # Unable to tell if is optimized or not, could be error related to memory
+                isOptimized = False
         else:
-            print(f"File '{log_file}' has no atribute optstatus.")
+            print(f"File '{file_path}' has no attribute optstatus.")
 
     except Exception as e:
         print(f"Error checking file '{file_path}': {str(e)}")
+
+    return isOptimized
 
 
 if __name__ == '__main__':
@@ -68,11 +83,14 @@ if __name__ == '__main__':
     log_files = sorted(glob.glob(args.file_path))
 
     if log_files:
+        table_data = []
         for log_file in log_files:
-            has_optimized_geometry(log_file)
+            optimized = has_optimized_geometry(log_file)
+            frequency = has_imaginary_frequency(log_file)
+            table_data.append([log_file, optimized, frequency])
 
-    if log_files:
-        for log_file in log_files:
-            has_imaginary_frequency(log_file)
+        headers = ["Log File", "Is Optimized", "No Negative Frequency"]
+        print(tabulate(table_data, headers=headers, tablefmt="grid"))
+
     else:
         print("No Gaussian output files found in the current directory.")
