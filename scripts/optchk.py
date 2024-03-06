@@ -27,7 +27,7 @@ def has_imaginary_frequency(file_path):
             hasZeroNegFreq = False
         else:
             # The file does not contain an imaginary frequency.
-            hasZeroNegFreq = False
+            hasZeroNegFreq = True
 
     except Exception as e:
         print(f"""Error parsing file '{file_path}': {str(e)}
