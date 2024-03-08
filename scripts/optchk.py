@@ -5,6 +5,7 @@ import glob
 import os
 import cclib
 from tabulate import tabulate
+import csv
 
 def has_imaginary_frequency(file_path):
     """
@@ -70,10 +71,24 @@ def has_optimized_geometry(file_path):
 
     return isOptimized
 
+def export_to_csv(data, csvFilePath):
+    if not data:
+        print("Error: Data is empty. Nothing to export.")
+        return
+    
+    try:
+        with open(csvFilePath, mode='w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(data)
+        print(f"Data has been successfully exported to {csvFilePath}")
+
+    except Exception as e:
+        print(f"Error exporting data to CSV: {str(e)}")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Check if Gaussian output file contains optimized geometry.')
     parser.add_argument('file_path', type=str, nargs='?', default='', help='Path to the Gaussian output file')
+    parser.add_argument('-csv', action='store_true', help='Export data to CSV')
 
     args = parser.parse_args()
 
@@ -94,3 +109,9 @@ if __name__ == '__main__':
 
     else:
         print("No Gaussian output files found in the current directory.")
+
+    if args.csv:
+        csvFile = "optchk.csv"
+        export_to_csv(table_data, csvFile)
+    else:
+        print("Data will not be exported to CSV.")
