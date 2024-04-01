@@ -414,7 +414,8 @@ def nbo_to_excel_main(file_paths: list[str], chosen_function_name):
 if __name__ == '__main__':
     folder_path = os.getcwd()  # Get the current working directory
 
-    file_type = input('My NBO output files ends in: ')  # Specify the file type you want to search for (e.g., '*.txt')
+    file_type = input('''My NBO output files ends in 
+    Specify the file type you want to search for (e.g: '*.txt'): ''')  # Specify the file type you want to search for (e.g., '*.txt')
     if file_type == '':
         file_type = '*.log'
 

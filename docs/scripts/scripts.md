@@ -1,9 +1,11 @@
 ---
 layout: default
 parent: Getting Started
-title: Downloading Necessary Scripts
+title: Automating Your Workflow
 has_children: true
-nav_order: 4
+nav_order: 10
+description: "Automate your workflow on the SPYDUR cluster"
+permalink: /docs/scripts
 ---
 
 # Downloading Necessary Scripts
