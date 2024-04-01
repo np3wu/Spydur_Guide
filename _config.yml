@@ -21,12 +21,9 @@ theme: just-the-docs
 
 url: https://np3wu.github.io/Spydur_Guide/
 
-aux_links:
-
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
 
 # Set a path/url to a logo that will be displayed instead of the title
-#logo: "/assets/images/just-the-docs.png"
+logo: "images/icons/Logo_2.png"
 
 # Enable or disable the site search
 # Supports true (default) or false
