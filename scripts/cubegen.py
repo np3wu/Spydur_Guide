@@ -36,4 +36,4 @@ for fchk_file in fchk_files:
         print(f"An error occurred while executing the second cubegen for {fchk_file}:")
         print(e)
 
-print("Task completed successfully.")
+print("Task completed.")

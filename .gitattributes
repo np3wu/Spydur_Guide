@@ -1,0 +1,10 @@
+/.github/workflows export-ignore
+/docs export-ignore
+/images export-ignore
+Gemfile export-ignore
+Gemfile.lock export-ignore
+README.md export-ignore
+_config.yml export-ignore
+index.md export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore

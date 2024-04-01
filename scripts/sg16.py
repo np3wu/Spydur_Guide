@@ -58,7 +58,11 @@ def main():
     )
     parser.add_argument('jobname', help="Name of the job. Usually ends with .com")
     args = parser.parse_args()
-    jobname = args.jobname
+    
+    if args.jobname.endswith(".com"):
+        jobname = args.jobname[:-4]
+    else:
+        jobname = args.jobname
 
     # Create or open the .slurm file
     create_slurm_file(jobname)
