@@ -1,7 +1,6 @@
 ---
 layout: default
-parent: Downloading Necessary Scripts
-grand_parent: Getting Started
+parent: Automating Your Workflow
 title: Activating the Scripts
 nav_order: 2
 ---

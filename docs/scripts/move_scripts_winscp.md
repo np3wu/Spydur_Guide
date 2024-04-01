@@ -1,7 +1,6 @@
 ---
 layout: default
-parent: Downloading Necessary Scripts
-grand_parent: Getting Started
+parent: Automating Your Workflow
 title: Moving Scripts to SPYDUR
 nav_order: 1
 ---
