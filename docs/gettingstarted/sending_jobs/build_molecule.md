@@ -11,8 +11,7 @@ nav_order: 1
 
 In this section, we will be using Chemcraft to build a molecule. Again ignore the instructions in example 2.1, because we will be using Chemcraft instead of Gauusview.
 
-Open the Chemcraft program (either by clicking on <img alt="chemcraft.png" src="https://github.com/np3wu/Spydur_Guide/blob/main/images/icons/chemcraft.png?raw=true" 
-alt="chemcraft_logo" width="10" height="10"> or using the search bar). 
+Open the Chemcraft program (either by clicking on <img alt="chemcraft.png" src="https://github.com/np3wu/Spydur_Guide/blob/main/images/icons/chemcraft.png?raw=true" alt="chemcraft_logo" width="100" height="100"> or using the search bar). 
 
 Once Chemcraft is open, you will be greeted with a blank screen.
 
