@@ -1,6 +1,5 @@
 ---
 layout: default
-parent: Getting Started
 title: Automating Your Workflow
 has_children: true
 nav_order: 10
