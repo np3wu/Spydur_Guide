@@ -143,3 +143,7 @@ squeue -u URID
 > Important Note
 >
 > If you don't see your job in the queue, it may have died prematurely! use the `ls` command to see if the output file was created. If it was, you can use the `cat` command to see the output file.
+
+## Conclusion
+
+Congratulations on your first job submission! You can now go to the next section to learn how to visualize the output file using Chemcraft.
