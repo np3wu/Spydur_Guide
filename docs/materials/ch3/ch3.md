@@ -8,5 +8,5 @@ description:
 permalink: /docs/Materials/Chapter3
 ---
 
-# Chapter 2: Getting Started with Calculations
+# Chapter 3: Optimizing Molecular Structure
 {: .fs-9 }
