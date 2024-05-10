@@ -97,17 +97,22 @@ Let's start by making a new directory to store all the files as you are working 
 mkdir gaussian_tutorial
 cd gaussian_tutorial
 ```
-To create a Gaussian input file, you can use the `nano` command to create a new file. Our gaussian input file will be named `e2.1_formaldehyde.com`. The extension is very important! Do not forget `.com`
+To create a Gaussian input file, you can use the `nano` command to create a new file. Our gaussian input file will be named `e2_1_formaldehyde.com`. The extension is very important! Do not forget `.com`
 
 ```bash
-nano e2.1_formaldehyde.com
+nano e2_1_formaldehyde.com
 ```
+{: .note-title }
+> Naming Convention
+>
+> Names should all be lowercase and without any spaces or special characters, including dots and commas. If you need to separate the words, use an underscore `_` instead. 
+
 Using the nano editor, you can now type in the following input file:
 
 ```
 %mem=2GB
 %nproc=12
-%chk=e2.1_formaldehyde.chk
+%chk=e2_1_formaldehyde.chk
 # APFD/6-311+G(2d,p)
 
 0 1
@@ -130,7 +135,7 @@ Now hit `Ctrl + X` to exit the nano editor. It will ask you if you want to save 
 Now that you have created the input file, you can submit the job to the cluster. We are using the `qg16` command to submit the job. 
 
 ```bash
-qg16 e2.1_formaldehyde.com
+qg16 e2_1_formaldehyde.com
 ```
 
 To monitor the job, you can use the `squeue` command. This allows you to monitor the job as it is running.
