@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Materials
-title: Chapter2
+title: Chapter 2
 has_children: true
 nav_order: 1
 description: 
