@@ -5,8 +5,8 @@ title: Chapter3
 has_children: true
 nav_order: 2
 description: 
-permalink: /docs/Materials/Chapter3
+permalink: /docs/materials/ch3
 ---
 
-# Chapter 2: Getting Started with Calculations
+# Chapter 3: Optimizing Molecular Structure
 {: .fs-9 }
