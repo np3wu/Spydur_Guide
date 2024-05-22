@@ -10,3 +10,5 @@ permalink: /docs/blackbook/gausserr
 
 # Gaussian Error
 {: .fs-9 }
+
+Documentation of Error outputs from Gaussian calculations and how to fix them.
