@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Sending Your First Gaussian Job
-grand_parent: Getting Started
+grand_parent: Materials
 title: Using Terminal
 nav_order: 2
 ---
@@ -111,7 +111,7 @@ Using the nano editor, you can now type in the following input file:
 
 ```
 %mem=2GB
-%nproc=12
+%nprocshared=12
 %chk=e2_1_formaldehyde.chk
 # APFD/6-311+G(2d,p)
 
