@@ -1,11 +1,11 @@
 ---
 layout: default
-parent: Getting Started
+parent: Materials
 title: Sending Your First Gaussian Job
 has_children: true
-nav_order: 4
+nav_order: 1
 description: 
-permalink: /docs/gettingstarted/sending_jobs
+permalink: /docs/materials/sending_jobs
 
 ---
 

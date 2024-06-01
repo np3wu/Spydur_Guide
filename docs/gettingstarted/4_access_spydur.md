@@ -2,7 +2,7 @@
 layout: default
 parent: Getting Started
 title: Accessing the Cluster
-nav_order: 3
+nav_order: 4
 ---
 
 # Accessing the Spydur Cluster

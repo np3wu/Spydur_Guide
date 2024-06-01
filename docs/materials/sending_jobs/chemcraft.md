@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Sending Your First Gaussian Job
-grand_parent: Getting Started
+grand_parent: Materials
 title: Chemcraft
 nav_order: 5
 ---
