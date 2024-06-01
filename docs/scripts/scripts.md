@@ -2,7 +2,7 @@
 layout: default
 title: Automating Your Workflow
 has_children: true
-nav_order: 10
+nav_order: 9
 description: "Automate your workflow on the SPYDUR cluster"
 permalink: /docs/scripts
 ---
